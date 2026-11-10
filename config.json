@@ -1,0 +1,67 @@
+{
+  "port": 8080,
+  "badi": "Badi Elgg",
+  "becken": "MZB",
+  "admin_passwort": "",
+  "visa": [
+    "TF",
+    "ER"
+  ],
+  "orte": [
+    "Büro",
+    "Maschinenraum",
+    "Beckenrand"
+  ],
+  "grenzwerte": {
+    "ph": {
+      "referenz": [
+        7.0,
+        7.4
+      ],
+      "toleranz": [
+        6.8,
+        7.6
+      ]
+    },
+    "cl_frei": {
+      "referenz": [
+        0.2,
+        0.4
+      ],
+      "toleranz": [
+        0.2,
+        0.8
+      ]
+    },
+    "cl_geb": {
+      "referenz": [
+        0.0,
+        0.2
+      ],
+      "toleranz": [
+        0.0,
+        0.2
+      ]
+    }
+  },
+  "runden": [
+    [
+      "Morgen",
+      "00:00",
+      "12:00"
+    ],
+    [
+      "Mittag",
+      "12:00",
+      "16:00"
+    ],
+    [
+      "Abend",
+      "16:00",
+      "24:00"
+    ]
+  ],
+  "backup_ordner": "backup",
+  "backup_tage": 365,
+  "csv_dezimalzeichen": "."
+}

@@ -1,0 +1,37 @@
+﻿BADI-JOURNAL – Installation (einmalig, ca. 10 Minuten)
+=====================================================
+
+1. Python installieren (gratis): https://www.python.org/downloads/
+   Beim Installieren unbedingt «Add python.exe to PATH» anhaken.
+
+2. Diesen Ordner z.B. nach C:\BadiJournal kopieren.
+
+3. start.bat doppelklicken. Es öffnet sich ein schwarzes Fenster mit zwei Adressen:
+     Am PC:      http://localhost:8080
+     Am Tablet:  http://192.168.x.x:8080
+   Windows fragt evtl. nach der Firewall -> «Zugriff zulassen» (privates Netzwerk).
+   Das Fenster muss offen bleiben (darf minimiert werden).
+
+4. Automatisch beim Hochfahren starten:
+   Win+R -> shell:startup -> dort eine Verknüpfung auf start.bat ablegen.
+
+5. Tablet: im Browser die Tablet-Adresse öffnen und als Startseite / Kiosk-App festlegen.
+   Tipp: dem PC im Router eine feste IP geben, damit die Adresse gleich bleibt.
+
+BEDIENUNG
+- Tablet: nur Erfassen + Anzeigen (Heute, Woche). Datum/Zeit werden automatisch gesetzt.
+- PC (http://localhost:8080): zusätzlich Bearbeiten, Löschen, Nachtragen, PDF-Bericht,
+  CSV-Export/Import und Änderungsprotokoll.
+- Soll der PC-Bereich auch von einem anderen Gerät erreichbar sein: in config.json
+  "admin_passwort" setzen und Programm neu starten.
+
+DATEN & BACKUP
+- Alle Daten: badi_journal.db (in diesem Ordner).
+- Bei jeder Änderung automatisches Backup in den Ordner «backup»:
+  messungen_aktuell.csv, messungen_JJJJ-MM-TT.csv und eine Kopie der Datenbank pro Tag.
+- Empfehlung: in config.json "backup_ordner" auf einen zweiten Ort setzen
+  (NAS, OneDrive-Ordner, USB-Stick), z.B. "D:\\Backup\\BadiJournal".
+- Notfall: Notfall_Excel_Vorlage.xlsx öffnen, CSV hineinkopieren (Anleitung in der Datei).
+
+EINSTELLUNGEN (config.json, mit Editor öffnen, danach Programm neu starten)
+- Grenzwerte, Visa (Kürzel), Messorte, Messrunden-Zeiten, Port, Backup-Ordner.
